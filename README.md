@@ -111,7 +111,7 @@ streamlit run app.py
 ```
 ---
 
-## 📈 Example Output
+## 📈 Streamlit App Dashboard Output
 ![Churn Risk Dashboard](https://github.com/Shiban1503/Customer-Retention-Enhancement/blob/main/dashboard_screenshot.png)
 ![Churn Risk Dashboard](https://github.com/Shiban1503/Customer-Retention-Enhancement/blob/main/dashboard_screenshot_1.png)
 
