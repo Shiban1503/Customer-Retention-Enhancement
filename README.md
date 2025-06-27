@@ -91,7 +91,7 @@ streamlit run app.py
 │   ├── preprocessor.pkl
 │
 ├── notebooks/                # Model development and EDA
-│   └── Customer_Retention_Enhancement.ipynb
+│   └── Customer Retention Enhancement through Predictive Analytics.ipynb
 │
 ├── data/                     # Raw and processed data
 │   ├── Customer_Churn_Data_Large.xlsx
