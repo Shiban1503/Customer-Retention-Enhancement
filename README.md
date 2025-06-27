@@ -118,8 +118,7 @@ streamlit run app.py
 ---
 
 ## 📄 License
-[MIT](LICENSE)
-
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 ---
 
 ## ✅ Conclusion
