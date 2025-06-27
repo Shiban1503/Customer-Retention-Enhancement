@@ -112,7 +112,7 @@ streamlit run app.py
 ---
 
 ## 📈 Example Output
-![Churn Risk Dashboard]([reports/dashboard_screenshot.png](https://github.com/Shiban1503/Customer-Retention-Enhancement/blob/main/dashboard_screenshot.png))
+![Churn Risk Dashboard](https://github.com/Shiban1503/Customer-Retention-Enhancement/blob/main/dashboard_screenshot.png)
 
 ---
 
