@@ -34,7 +34,7 @@ The dataset consists of anonymised customer records including:
 - Customer service interaction history
 - Churn status labels (target variable)
 
-Raw data file: `data/Customer_Churn_Data_Large.xlsx`
+Raw data file: `Customer_Churn_Data_Large.xlsx`
 
 ---
 
@@ -48,25 +48,24 @@ Raw data file: `data/Customer_Churn_Data_Large.xlsx`
 - Saved cleaned train/test splits to CSV
 
 ### 📊 Exploratory Data Analysis (EDA)
-- Plotted churn distribution across income, age, gender
+- Plotted churn distribution across income, age, and gender
 - Identified churn correlations with service use and unresolved support tickets
 - Visualised boxplots, KDE plots, and heatmaps for relationships
 
 ### 🤖 Machine Learning - Predictive Model
 - Binary classification task (Churn vs No Churn)
-- Models evaluated: Logistic Regression, Random Forest, XGBoost
+- Models evaluated: Logistic Regression, Random Forest, GradientBoosting, XGBoost
 - Used SMOTE for class imbalance handling
 - Pipeline included hyperparameter tuning via GridSearchCV
 
 ### 🎯 Training and Evaluation
 - Metrics: Precision, Recall, F1-score, ROC-AUC, PR-AUC
-- Best model: XGBoost with ~0.88 ROC-AUC and strong recall
 - Feature importance analysed using SHAP and `feature_importances_`
 
 ### 🧾 Results
 - Deployed a Streamlit app for business use
 - Real-time churn prediction with explanations
-- Business recommendations generated dynamically based on top features
+- Business recommendations are generated dynamically based on top features
 
 ---
 
@@ -81,8 +80,6 @@ cd app
 streamlit run app.py
 ```
 
-Upload a CSV matching the structure of `test_churn_data.csv` and receive churn predictions with explanations.
-
 ---
 
 ## 🧱 Project Structure
@@ -91,8 +88,6 @@ Upload a CSV matching the structure of `test_churn_data.csv` and receive churn p
 │   ├── app.py
 │   ├── optimized_churn_model.pkl
 │   ├── preprocessor.pkl
-│   ├── test_churn_data.csv
-│   └── business_recommendations.json
 │
 ├── notebooks/                # Model development and EDA
 │   └── Customer_Retention_Enhancement.ipynb
