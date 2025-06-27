@@ -109,6 +109,10 @@ streamlit run app.py
 ├── LICENSE
 └── README.md
 ```
+---
+
+## 📈 Example Output
+![Churn Risk Dashboard](reports/dashboard_screenshot.png)
 
 ---
 
