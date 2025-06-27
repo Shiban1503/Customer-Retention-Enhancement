@@ -1,6 +1,8 @@
-# Customer Retention Enhancement through Predictive Analytics 
+# 🧠 Customer Churn Prediction for SmartBank (Lloyds Banking Group)
 
-## 📚 Table of Contents
+A predictive analytics project focused on identifying customers at risk of churning using machine learning, empowering SmartBank to implement proactive retention strategies.
+
+## 📑 Table of Contents
 - [Purpose](#purpose)
 - [Dataset Overview](#dataset-overview)
 - [Steps and Implementation](#steps-and-implementation)
@@ -8,23 +10,18 @@
   - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
   - [Machine Learning - Predictive Model](#machine-learning---predictive-model)
   - [Training and Evaluation](#training-and-evaluation)
-  - [Results](#results)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [License](#license)
-- [Conclusion](#conclusion)
+- [📊 Results](#results)
+- [⚙️ Installation](#installation)
+- [🚀 Usage](#usage)
+- [📁 Project Structure](#project-structure)
+- [📄 License](#license)
+- [✅ Conclusion](#conclusion)
 
 ---
 
 ## 🎯 Purpose
-A predictive analytics project that helps SmartBank (a fictional subsidiary of [Lloyds Banking Group](#Lloyds-Banking-Group)) identify and reduce customer churn using machine learning, SHAP explainability, and a Streamlit app interface.
 
-The project addresses the challenge of customer churn at SmartBank. Using historical customer data, we aim to:
-- Predict churn likelihood using machine learning
-- Explain factors contributing to churn
-- Recommend customer retention strategies
-
+This project aims to help SmartBank (a subsidiary of Lloyds Banking Group) improve customer retention by identifying customers likely to churn. Using machine learning, we developed an end-to-end data science pipeline to provide actionable insights and support strategic decision-making.
 ---
 
 ## 📊 Dataset Overview
