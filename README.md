@@ -22,10 +22,12 @@ A predictive analytics project focused on identifying customers at risk of churn
 ## 🎯 Purpose
 
 This project aims to help SmartBank (a subsidiary of Lloyds Banking Group) improve customer retention by identifying customers likely to churn. Using machine learning, we developed an end-to-end data science pipeline to provide actionable insights and support strategic decision-making.
+
 ---
 
 ## 📊 Dataset Overview
-The dataset consists of anonymised customer records including:
+
+The project uses a synthetic but realistic dataset containing:
 - Demographics (Age, Gender, Marital Status, Income Level)
 - Usage patterns (Login frequency, Channel preferences)
 - Transaction behavior (Spending, Category diversity)
@@ -36,34 +38,48 @@ Raw data file: `Customer_Churn_Data_Large.xlsx`
 
 ---
 
+
 ## 🧪 Steps and Implementation
 
 ### 🔄 Data Preprocessing
-- Merged five separate tables into a unified customer-level view
-- Handled missing values (imputation and flagging)
-- Detected and capped outliers using IQR
-- Scaled numerical features and encoded categoricals
-- Saved cleaned train/test splits to CSV
+- Aggregated multiple sources: demographics, service logs, transactions, churn labels
+- Engineered key features: `TotalSpent`, `LoginFrequency`, `ResolutionRate`, `ValuePerLogin`
+- Handled missing values and capped outliers using IQR method
+- Standardized numeric features and encoded categoricals using pipelines
+- Train-test split: stratified to handle class imbalance
 
 ### 📊 Exploratory Data Analysis (EDA)
-- Plotted churn distribution across income, age, and gender
-- Identified churn correlations with service use and unresolved support tickets
-- Visualised boxplots, KDE plots, and heatmaps for relationships
+- Churn rate by income, marital status, age, and service usage
+- Behavioral trends: churners showed lower spending, fewer logins, lower resolution rates
+- Used KDE plots, boxplots, bar charts, and heatmaps
 
 ### 🤖 Machine Learning - Predictive Model
-- Binary classification task (Churn vs No Churn)
-- Models evaluated: Logistic Regression, Random Forest, GradientBoosting, XGBoost
-- Used SMOTE for class imbalance handling
-- Pipeline included hyperparameter tuning via GridSearchCV
+- Compared multiple classifiers:
+  - Logistic Regression
+  - Random Forest
+  - Gradient Boosting
+  - XGBoost
+- Addressed class imbalance using SMOTE oversampling in pipelines
+- Hyperparameter tuning via `GridSearchCV`
 
 ### 🎯 Training and Evaluation
-- Metrics: Precision, Recall, F1-score, ROC-AUC, PR-AUC
-- Feature importance analysed using SHAP and `feature_importances_`
+- Final model (Best Model): **Logistic Regression with L1 regularization**
+- Model metrics on test set:
+  - Precision, Recall, F1, ROC-AUC, PR-AUC
+- Interpretation using:
+  - SHAP for tree models (optional)
+  - Coefficients for linear models
 
 ### 🧾 Results
-- Deployed a Streamlit app for business use
-- Real-time churn prediction with explanations
-- Business recommendations are generated dynamically based on top features
+The Logistic Regression model was chosen for its:
+- High recall on at-risk customers
+- Simple and transparent decision logic
+- Smooth integration into SmartBank’s workflow
+
+Key features influencing churn included:
+- Total spent
+- Login frequency
+- Service resolution rate
 
 ---
 
@@ -74,10 +90,13 @@ pip install -r requirements.txt
 
 ## ▶️ Usage
 ```bash
-cd app
 streamlit run app.py
 ```
-
+- Enter customer details in the form
+- Click Predict Churn Risk to see the prediction
+- Review the risk level and key factors
+- Take recommended actions to retain at-risk customers
+- Save results to your CRM system (simulated)
 ---
 
 ## 🧱 Project Structure
@@ -120,7 +139,7 @@ This project is licensed under the MIY License. Please refer to the [MIT](LICENS
 ---
 
 ## ✅ Conclusion
-This project demonstrates how predictive analytics and interpretability tools can be combined to drive customer-centric decision-making. It empowers banks to proactively intervene and reduce churn risk, supported by transparent, data-driven insights.
+This project demonstrates a complete data science pipeline – from data wrangling and EDA to model deployment via Streamlit. It showcases practical skills in churn prediction, model selection, interpretability, and business impact analysis.
 
 ---
 Developed by **Mohamed Shiban Lal**
