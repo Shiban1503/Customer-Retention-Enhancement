@@ -18,7 +18,7 @@
 ---
 
 ## 🎯 Purpose
-A predictive analytics project that helps SmartBank (a fictional subsidiary of #Lloyds Banking Group) identify and reduce customer churn using machine learning, SHAP explainability, and a Streamlit app interface.
+A predictive analytics project that helps SmartBank (a fictional subsidiary of [Lloyds Banking Group](#Lloyds-Banking-Group)) identify and reduce customer churn using machine learning, SHAP explainability, and a Streamlit app interface.
 
 The project addresses the challenge of customer churn at SmartBank. Using historical customer data, we aim to:
 - Predict churn likelihood using machine learning
