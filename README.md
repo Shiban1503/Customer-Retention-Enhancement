@@ -117,12 +117,11 @@ streamlit run app.py
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
----
-
 ## ✅ Conclusion
 This project demonstrates how predictive analytics and interpretability tools can be combined to drive customer-centric decision-making. It empowers banks to proactively intervene and reduce churn risk, supported by transparent, data-driven insights.
-
+---
+## 📄 License
+This project is licensed under the MIY License. Please take a look at [MIT](LICENSE) the file for details.
+---
 Developed by **Mohamed Shiban Lal**
 _Data Science Graduate | Predictive Analytics Enthusiast_
