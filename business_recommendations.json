@@ -1,0 +1,24 @@
+{
+    "retention_strategies": [
+        "Combine model predictions with business rules to improve churn capture"
+    ],
+    "model_performance": {
+        "accuracy": 0.47,
+        "precision": 0.1717171717171717,
+        "recall": 0.4146341463414634,
+        "f1": 0.24285714285714285,
+        "roc_auc": 0.44408651633686147,
+        "pr_auc": 0.18326801352337785,
+        "confusion_matrix": [
+            [
+                77,
+                82
+            ],
+            [
+                24,
+                17
+            ]
+        ]
+    },
+    "key_findings": []
+}
